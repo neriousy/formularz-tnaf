@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Zadanie 2</title>
+</head>
+<body>
+    <form action="" method="get">
+        <h4>
+            Employment Form
+        </h4>
+        <div class="flex-row flex-spacebetween">
+            <div class="flex-column width-half">
+                <label for="first-name" class="text-label">First name</label>
+                <input type="text" name="first-name" id="first-name" class="text-input" placeholder="Jan" required>
+            </div>
+            
+            <div class="flex-column width-half">
+                <label for="last-name" class="text-label">Last name</label>
+                <input type="text" name="last-name" id="last-name" class="text-input" placeholder="Kowalski" required>
+            </div>
+        </div>
+
+        <div class="flex-row flex-spacebetween">
+            <div class="flex-column width-third">
+                <label for="email" class="text-label">E-mail</label>
+                <input type="email" name="email" id="email" class="text-input" placeholder="jk@gmail.com" required>
+            </div>
+            <div class="flex-column width-third">
+                <label for="phone" class="text-label">Phone</label>
+                <input type="tel" name="phone" id="phone"  class="text-input" placeholder="505 505 505" pattern="[0-9]{3][0-9]{3}[0-9]{3}" required>
+            </div>
+            
+            <div class="flex-column width-third">
+                <label for="birth-date" class="text-label">Date of birth</label>
+                <input type="date" name="birth-date" id="birth-date" class="text-input" max="15-11-2022" required>
+            </div>
+        </div>
+
+        <div class="flex-column">
+            <label for="gender" class="text-label">Gender</label>
+            <select name="gender" class="text-input" required>
+                <option selected></option>
+                <option value="1">Male</option>
+                <option value="2">Female</option>
+            </select>
+        </div>
+
+        <p class="text-label">What are you looking for</p>
+        <div class="flex-spacebetween">
+            <div class="flex-row">
+                <input type="radio" name="role" id="soft-eng" required>
+                <label for="soft-eng" class="media-label">Software Engineer</label>
+            </div>
+
+            <div class="flex-row">
+                <input type="radio" name="role" id="ux-eng">
+                <label for="ux-eng" class="media-label">UX Engineer</label>
+            </div>
+
+
+            <div class="flex-row">
+                <input type="radio" name="role" id="analitycs-spec">
+                <label for="analitycs-spec" class="media-label">Analytics Specialist</label>
+            </div>
+            <div class="flex-row">
+                <input type="radio" name="role" id="project-manager">
+                <label for="project-manager" class="media-label">Project Manager</label>
+            </div>
+        </div>
+        <div class="flex-column">
+            <p class="text-label">Which programming languages do you know</p>
+
+            <div class="flex-row flex-spacebetween media-row">
+                <div class="flex-row ">
+                    <input type="checkbox" name="java" id="java" class="media-radio">
+                    <label for="java" >Java</label>  
+                </div>    
+
+                <div class="flex-row ">
+                    <input type="checkbox" name="js" id="js" class="media-radio">
+                    <label for="js" class="media-label">JavaScript</label>
+                </div>
+
+                <div class="flex-row ">
+                    <input type="checkbox" name="csharp" id="csharp" class="media-radio">
+                    <label for="csharp" class="media-label">C#</label>
+                </div>
+
+                <div class="flex-row">
+                    <input type="checkbox" name="kotlin" id="kotlin" class="media-radio">
+                    <label for="kotlin" class="media-label">Kotlin</label>
+                </div>
+
+
+                <div class="flex-row ">
+                    <input type="checkbox" name="python" id="python" class="media-radio">
+                    <label for="python">Python</label>
+                </div>
+                
+                
+                <div class="flex-row media-radio">
+                    <input type="checkbox" name="scalla" id="scalla" class="media-radio">
+                    <label for="scala">Scala</label>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="flex-column">
+            <label for="message" class="text-label">Message</label>
+            <textarea name="message" id="message" cols="30" rows="10" placeholder="Type your message"></textarea>
+        </div>    
+
+        <div class="flex-row flex-spacebetween">
+            <input type="reset" value="Reset" class="custom-button reset">
+            <input type="submit" value="Submit" class="custom-button submit">
+        </div>    
+    </form>
+
+
+</body>
+</html>
